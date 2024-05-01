@@ -1,5 +1,5 @@
 public enum TipoDeSala {
-    BASIC(20), THREE_D(40), VIP(80);
+    BASIC(20), _3D(40), VIP(80);
 
     private final double price;
 

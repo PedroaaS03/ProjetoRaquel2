@@ -21,12 +21,34 @@ public class ServicoCliente {
     }
 
     public Cliente LoginCliente(String nome, String senha){
-        for (Cliente cliente : this.clientes){
+        for (Cliente cliente : clientes){
             if(cliente.getNomeCliente().equals(nome) && cliente.getSenhaCliente().equals(senha)){
                 return cliente;
             }
         }
         return null;
+    }
+
+    public double fecharPedido(String email , double valor) {
+        for (Cliente cliente : clientes){
+            if(cliente.getEmail().equals(email)){
+
+                if (valor > cliente.getTipoCartao().getGastoParaPonto()) {
+                    cliente.setPontos(  cliente.getPontos() + 1);
+                }
+                if (valor > cliente.getTipoCartao().getGastoParaDesconto()) {
+                    double valorTotal = valor * cliente.getTipoCartao().getValorDesconto();
+                    return valorTotal;
+
+
+                }
+
+            }
+
+        }
+
+
+        return valor;
     }
 
 

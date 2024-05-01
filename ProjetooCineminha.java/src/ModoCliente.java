@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ModoCliente {
 
 
-    static void enterCustomerMode(String nomeC, String senhaC) {
+    static void enterCustomerMode(String email) {
         Scanner sc = new Scanner(System.in);
         double totalGeral = 0;
         double totalDaCompra = 0;
@@ -33,10 +33,10 @@ public class ModoCliente {
                     totalLanche = totalLanche + servicoLa.CompraLanche(sc);
                     break;
                 case 3:
-                    FechaPedido fechaP = new FechaPedido();
+                    ServicoCliente servicoC = new ServicoCliente();
                     System.out.println(" - Fechando Pedido - ");
                     System.out.println("Valor total da compra: " + totalGeral);
-                    System.out.println("Total a pagar: " + fechaP.fecharPedido(nomeC,senhaC, totalGeral));
+                    System.out.println("Total a pagar: " + servicoC.fecharPedido(email, totalGeral));
                     System.out.println("Realizar o pagamento: ");
                     System.out.println("Sim(1) ou Não(2)");
                     int realizar = sc.nextInt();

@@ -7,9 +7,13 @@ public class ServicoExibicao {
     private  List<Exibicao> exibicoes;
     public ServicoExibicao() {
         exibicoes = new ArrayList<>();
-        exibicoes.add(new Exibicao(new SalaDeCinema("Sala1", TipoDeSala.THREE_D, 30), "Avatar", "13:00"));
-        exibicoes.add(new Exibicao(new SalaDeCinema("Sala2", TipoDeSala.BASIC, 30), "Narnia", "15:30"));
-        exibicoes.add(new Exibicao(new SalaDeCinema("Sala3", TipoDeSala.VIP, 15), "Viagem de Chico", "18:45"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala1", TipoDeSala._3D, 50), "Avatar", "13:00"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala2", TipoDeSala.BASIC, 50), "Narnia", "15:30"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala3", TipoDeSala.BASIC, 50), "Viagem de Chico", "18:45"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala3", TipoDeSala.VIP, 30), "Viagem de Chico", "18:45"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala3", TipoDeSala.BASIC, 50), "Viagem de Chico", "18:45"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala3", TipoDeSala.VIP, 30), "Viagem de Chico", "18:45"));
+        exibicoes.add(new Exibicao(new SalaDeCinema("Sala3", TipoDeSala._3D, 50), "Viagem de Chico", "18:45"));
     }
     // Assume these are normally loaded from a file
 

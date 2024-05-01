@@ -23,11 +23,11 @@ public class Main {
                     System.out.println("Insira um nome:");
                     String nomeC = sc.next();
                     System.out.println("Insira um email:");
-                    String email = sc.next();
+                    String emailC = sc.next();
                     System.out.println("Insira uma senha:");
                     String senhaC = sc.next();
                     int pontos = 0;
-                    if(servicoC.CadastroCliente(nomeC,email,senhaC,pontos) != null){
+                    if(servicoC.CadastroCliente(nomeC,emailC,senhaC,pontos) != null){
                         System.out.println("Cadastro bem sucedido");
                     }else{
                         System.out.println("Email já foi cadastrado");
@@ -42,7 +42,7 @@ public class Main {
                     String senhaLoginC = sc.next();
                     if(servicoC.LoginCliente(nomeLoginC,senhaLoginC) != null) {
                         System.out.println("Bem-vindo " + nomeLoginC);
-                        ModoCliente.enterCustomerMode(nomeLoginC, senhaLoginC);
+                        ModoCliente.enterCustomerMode(emailC);
                     }
                     break;
                 case 3:
