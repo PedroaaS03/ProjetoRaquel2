@@ -1,4 +1,7 @@
-public class Exibicao {
+import java.io.Serializable;
+
+public class Exibicao implements Serializable {
+    private static final long serialVersionUID = 1L;
     private SalaDeCinema salao;
     private String nomeFilme;
     private String horarioFilmme;

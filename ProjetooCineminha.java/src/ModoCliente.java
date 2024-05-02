@@ -13,9 +13,9 @@ public class ModoCliente {
         boolean customerSession = true;
         while (customerSession) {
             try {
-                System.out.println(" - Cliente Menu - ");
+                System.out.println(" - Objetos.Cliente Menu - ");
                 System.out.println("1. Comprar Ingresso");
-                System.out.println("2. Comprar Lanche");
+                System.out.println("2. Comprar Objetos.Lanche");
                 System.out.println("3. Finalizar Compra");
                 System.out.println("4. Cancelar e Sair");
                 System.out.print("Selecione uma opção: ");
@@ -48,7 +48,7 @@ public class ModoCliente {
                         break;
                     case 4:
                         customerSession = false;
-                        System.out.println("Saindo do modo Cliente...");
+                        System.out.println("Saindo do modo Objetos.Cliente...");
                         break;
                     default:
                         throw new Exception("Opção inválida, tente novamente.");

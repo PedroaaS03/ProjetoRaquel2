@@ -1,8 +1,11 @@
+
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        Sistema sistema = new Sistema();
         ServicoCliente servicoC = new ServicoCliente();
         ServicoGerente servicoG = new ServicoGerente();
         Scanner sc = new Scanner(System.in);
@@ -12,8 +15,8 @@ public class Main {
             try {
                 System.out.println("Bem-vindo ao Cinema");
                 System.out.println("1. Registrar");
-                System.out.println("2. Modo Cliente");
-                System.out.println("3. Modo Gerente");
+                System.out.println("2. Modo Objetos.Cliente");
+                System.out.println("3. Modo Objetos.Gerente");
                 System.out.println("4. Exit");
                 System.out.print("Escolha uma opção: ");
                 int escolha = sc.nextInt();
@@ -63,6 +66,7 @@ public class Main {
                         }
                         break;
                     case 4:
+                        sistema.encerrarSistema();
                         rodarProg = false;
                         System.out.println("Saindo...");
                         break;

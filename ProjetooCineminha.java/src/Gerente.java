@@ -1,4 +1,7 @@
-public class Gerente {
+import java.io.Serializable;
+
+public class Gerente implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String nomeGerente;
     private String senhaGerente;

@@ -4,10 +4,11 @@ public class ModoGerente {
 
     static void enterManagerMode(Scanner scanner) {
         ServicoGerente servicoG = new ServicoGerente();
+        ServicoCliente servicoC = new ServicoCliente();
         boolean managerSession = true;
         while (managerSession) {
             try {
-                System.out.println("Menu do Gerente:");
+                System.out.println("Menu do Objetos.Gerente:");
                 System.out.println("1. Editar Exibições");
                 System.out.println("2. Gerar Relatório");
                 System.out.println("3. Sair");
@@ -19,7 +20,8 @@ public class ModoGerente {
                         servicoG.updateShowings(scanner);
                         break;
                     case 2:
-
+                        System.out.println("Emitindo rerlatório");
+                        servicoC.gerarRelatorio();
 
                         break;
                     case 3:

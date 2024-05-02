@@ -1,4 +1,7 @@
-public class Lanche {
+import java.io.Serializable;
+
+public class Lanche implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String nomeLanche;
     private double precoLanche;
