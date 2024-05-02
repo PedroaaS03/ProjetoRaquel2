@@ -1,18 +1,33 @@
+import java.util.List;
+
 public class Cliente {
     private String nomeCliente;
     private String email;
     private String senhaCliente;
     private int pontos;
+    private double totalArrecadado;
     private CartaoFidelidade tipoCartao;
 
-    public Cliente(String nome, String email, String senha, int pontos) {
+
+
+
+    public Cliente(String nome, String email, String senha, int pontos, double totalArrecadado) {
         this.nomeCliente = nome;
         this.email = email;
         this.senhaCliente = senha;
         this.pontos = 0;
         this.tipoCartao = CartaoFidelidade.SILVER;
+        this.totalArrecadado = totalArrecadado;
+
     }
 
+    public double getTotalArrecadado(){
+        return totalArrecadado;
+    }
+    public void setTotalArrecadado(double totalArrecadado){
+        this.totalArrecadado = totalArrecadado;
+
+    }
     public String getNomeCliente() {
         return nomeCliente;
     }

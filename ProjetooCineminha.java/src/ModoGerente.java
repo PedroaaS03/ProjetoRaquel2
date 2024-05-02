@@ -19,7 +19,8 @@ public class ModoGerente {
                         servicoG.updateShowings(scanner);
                         break;
                     case 2:
-                        servicoG.generateReports(scanner);
+
+
                         break;
                     case 3:
                         managerSession = false;

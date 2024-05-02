@@ -25,10 +25,10 @@ public class ServicoGerente {
     public void updateShowings(Scanner scanner) throws Exception {
         ServicoExibicao servicoEx = new ServicoExibicao();
 
-        System.out.println("Updating showings...");
-        System.out.println("1. Add new showing");
-        System.out.println("2. Modify existing showing");
-        System.out.println("3. Remove existing showing");
+
+        System.out.println("1. Adicionar nova Exibição");
+        System.out.println("2. Modificar uma exibição existente");
+        System.out.println("3. Remover uma exibição");
         System.out.print("Select an option: ");
         int choice = scanner.nextInt();
 
@@ -47,8 +47,4 @@ public class ServicoGerente {
         }
     }
 
-    public void generateReports(Scanner scanner) {
-        System.out.println("Generating reports...");
-        // Lógica para gerar relatórios de vendas
-    }
 }

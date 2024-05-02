@@ -28,7 +28,8 @@ public class Main {
                         System.out.println("Insira uma senha:");
                         String senhaC = sc.next();
                         int pontos = 0;
-                        if(servicoC.cadastroCliente(nomeC,emailC,senhaC,pontos) != null){
+                        double totalArrecadado = 0;
+                        if(servicoC.cadastroCliente(nomeC,emailC,senhaC,pontos, totalArrecadado) != null){
                             System.out.println("Cadastro bem sucedido");
                         }else{
                             throw new Exception("Email já foi cadastrado");

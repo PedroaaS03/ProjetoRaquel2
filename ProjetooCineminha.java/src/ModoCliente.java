@@ -1,9 +1,11 @@
+import java.util.Date;
 import java.util.Scanner;
 
 public class ModoCliente {
 
     static void enterCustomerMode(String email) {
         Scanner sc = new Scanner(System.in);
+
         double totalGeral = 0;
         double totalDaCompra = 0;
         double totalIngresso = 0;
@@ -39,6 +41,7 @@ public class ModoCliente {
                         System.out.println("Sim(1) ou Não(2)");
                         int realizar = sc.nextInt();
                         if (realizar == 1) {
+
                             System.out.println("Obrigado pela compra, volte sempre");
                             customerSession = false;
                         }
