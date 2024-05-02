@@ -7,11 +7,11 @@ public class ModoGerente {
         boolean managerSession = true;
         while (managerSession) {
             try {
-                System.out.println("\nManager Menu:");
-                System.out.println("1. Update Showings");
-                System.out.println("2. Generate Reports");
-                System.out.println("3. Logout");
-                System.out.print("Select an option: ");
+                System.out.println("Menu do Gerente:");
+                System.out.println("1. Editar Exibições");
+                System.out.println("2. Gerar Relatório");
+                System.out.println("3. Sair");
+                System.out.print("Selecione uma opção: ");
                 int choice = scanner.nextInt();
 
                 switch (choice) {
@@ -23,7 +23,7 @@ public class ModoGerente {
                         break;
                     case 3:
                         managerSession = false;
-                        System.out.println("Logging out...");
+                        System.out.println("Saindo...");
                         break;
                     default:
                         throw new Exception("Opção inválida, tente novamente.");

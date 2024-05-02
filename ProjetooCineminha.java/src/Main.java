@@ -6,19 +6,19 @@ public class Main {
         ServicoCliente servicoC = new ServicoCliente();
         ServicoGerente servicoG = new ServicoGerente();
         Scanner sc = new Scanner(System.in);
-        boolean runApp = true;
+        boolean rodarProg = true;
 
-        while (runApp) {
+        while (rodarProg) {
             try {
-                System.out.println("\nWelcome to the Cinema Ticket System!");
-                System.out.println("1. Register");
-                System.out.println("2. Customer Mode");
-                System.out.println("3. Manager Mode");
+                System.out.println("Bem-vindo ao Cinema");
+                System.out.println("1. Registrar");
+                System.out.println("2. Modo Cliente");
+                System.out.println("3. Modo Gerente");
                 System.out.println("4. Exit");
-                System.out.print("Choose an option: ");
-                int choice = sc.nextInt();
+                System.out.print("Escolha uma opção: ");
+                int escolha = sc.nextInt();
 
-                switch (choice) {
+                switch (escolha) {
                     case 1:
                         System.out.println(" - Cadastro - ");
                         System.out.println("Insira um nome:");
@@ -62,8 +62,8 @@ public class Main {
                         }
                         break;
                     case 4:
-                        runApp = false;
-                        System.out.println("Exiting... Thank you for using the system!");
+                        rodarProg = false;
+                        System.out.println("Saindo...");
                         break;
                     default:
                         throw new Exception("Opção inválida, tente novamente.");

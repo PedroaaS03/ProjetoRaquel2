@@ -11,12 +11,12 @@ public class ModoCliente {
         boolean customerSession = true;
         while (customerSession) {
             try {
-                System.out.println("\nCustomer Menu:");
-                System.out.println("1. Buy Tickets");
-                System.out.println("2. Buy Snacks");
-                System.out.println("3. Checkout");
-                System.out.println("4. Cancel and Exit");
-                System.out.print("Select an option: ");
+                System.out.println(" - Cliente Menu - ");
+                System.out.println("1. Comprar Ingresso");
+                System.out.println("2. Comprar Lanche");
+                System.out.println("3. Finalizar Compra");
+                System.out.println("4. Cancelar e Sair");
+                System.out.print("Selecione uma opção: ");
                 int choice = sc.nextInt();
                 totalDaCompra = totalIngresso + totalLanche;
                 totalGeral = totalDaCompra + totalGeral;
@@ -45,7 +45,7 @@ public class ModoCliente {
                         break;
                     case 4:
                         customerSession = false;
-                        System.out.println("Exiting customer mode...");
+                        System.out.println("Saindo do modo Cliente...");
                         break;
                     default:
                         throw new Exception("Opção inválida, tente novamente.");
